@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: rgb(37,36,34);
+background: radial-gradient(circle, rgba(37,36,34,1) 27%, rgba(65,65,64,1) 55%);
+    font-family: sans-serif;
+    color: #c5c5c5;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: -3%;
+    color: #e9e6e6;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: #000000 0px 0px 5px, #000000 0px 0px 5px;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+    color: #c5c5c5;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 35s infinite forwards linear;
+    text-shadow: #000000 0px 0px 5px, #000000 0px 0px 5px, #000000 0px 0px 5px;
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);;
+    border-radius: 30px;
+    border: solid 1px black;
+}
+
+.imagem span{
+    margin: auto;
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+footer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center; 
+    margin-top: 2px;
+    color: #ffffff;
+    background: #000000;
+    margin-top: 44.1%;
+}
+
+@keyframes rotate360{
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://www.eusemfronteiras.com.br/wp-content/uploads/2021/09/araelf-123rf-scaled.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+.imagem:nth-child(2){
+    background-image: url(https://noticiasconcursos.com.br/wp-content/uploads/2021/03/noticiasconcursos.com.br-o-pensamento-de-rene-descartes-resumo-para-o-enem-descartes.jpeg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagem:nth-child(3){
+    background-image: url(https://www.netmundi.org/filosofia/wp-content/uploads/2012/07/Ludwig-Wittgenstein-filosofia-1024x612.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.imagem:nth-child(4){
+    background-image: url(https://filosofianaescola.com/wp-content/uploads/2019/04/Prot%C3%A1goras.png);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.imagem:nth-child(5){
+    background-image: url(https://literaturars.files.wordpress.com/2022/02/hobbes.png);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.imagem:nth-child(6){
+    background-image: url(https://livroecafe.com/wp-content/uploads/2023/03/Friedrich-Nietzsche-capa.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.imagem:nth-child(7){
+    background-image: url(https://gorgulho.com/wp-content/uploads/2021/05/fernando-pessoa-1.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagem:nth-child(8){
+    background-image: url(https://filosofiadoinicio.com/wp-content/uploads/2021/08/felicidade-para-aristoteles-2.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagem:nth-child(9){
+    background-image: url(https://editoraunesp.com.br/imagem/304-anos-de-rousseau-e-sua-importancia-para-a-filosofia_imagem);
+    transform: rotateY(320deg) translateZ(430px);
+}
